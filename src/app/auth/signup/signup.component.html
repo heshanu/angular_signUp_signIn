@@ -6,17 +6,19 @@
         <input type="text" formControlName="userame">
     </div>
     {{authForm.controls['username'].errors|json }}
+
     <div class="field"> 
         <label for="">Password</label>
         <input type="text" formControlName="password">
     </div>
     {{authForm.controls['password'].errors |json}}
+
     <div class="field"> 
         <label for="">PasswordConformation:</label>
         <input type="text" formControlName="passwordConformation">
     </div>
     {{authForm.controls['passwordConformation'].errors |json}}
+    
     <button class="ui submit button primary">Submit</button>
-
-    {{authForm.errors}}
+    {{authForm.errors|json}}
 </form>
