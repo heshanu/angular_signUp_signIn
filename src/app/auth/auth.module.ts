@@ -6,10 +6,11 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { Routes ,RouterModule} from '@angular/router';
 
+
 //added routes
 const routes:Routes=[
   {path:'signup',component:SignupComponent},
-  {path:'signin',component:SigninComponent}
+  {path:' ',component:SigninComponent}
 ];
 
 @NgModule({
