@@ -8,6 +8,12 @@ import { FormGroup,FormControl } from '@angular/forms';
 })
 export class SignupComponent implements OnInit {
 
+  authForm=new FormGroup({
+    username:new FormControl(''),
+    password:new FormControl(''),
+    passwordConformation:new FormControl('')
+  });
+  
   constructor() { }
 
   ngOnInit(): void {
