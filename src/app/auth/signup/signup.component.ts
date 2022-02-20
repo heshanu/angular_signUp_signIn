@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormControl,Validator, Validators,ValidatorFn,AbstractControl,ValidationErrors } from '@angular/forms';
 import { MatchPassword  } from '../validators/match-password';
-import { UniqueUsername } from '../validators/unique-username';
+import {UniqueUsername } from '../validators/unique-username';
 
 @Component({
   selector: 'app-signup',
