@@ -9,7 +9,7 @@ interface usernameAvliableResponse{
 })
 export class AuthService {
   constructor(private http:HttpClient) { }
-  usernameAvliable(username:string){
+  usernameAvliable(username:string):any{
     this.http.post<{usernameAvliableResponse:any}>('https://api.angular-email.com/auth/username',{username});
   }
 }
